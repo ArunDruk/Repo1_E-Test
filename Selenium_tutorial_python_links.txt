@@ -1,0 +1,101 @@
+Selenium with Python
+8:26
+Selenium with Python Tutorial 1-Installing Python,Selenium & Pycharm IDE
+
+11:52
+Selenium with Python Tutorial 2-How to Run Tests on Chrome, Firefox & IE Browsers
+
+7:48
+Selenium with Python Tutorial 3-WebDriver Commands
+
+9:17
+Selenium with Python Tutorial 4-WebDriver Navigational Commands
+
+14:10
+Selenium with Python Tutorial 5-WebDriver Conditional Commands
+
+10:20
+Selenium with Python Tutorial 6-WebDriver Implicit wait
+
+32:09
+Selenium with Python Tutorial 7-WebDriver Explicit wait
+
+13:06
+Selenium with Python Tutorial 8-Working with Input box/Test Box
+
+8:10
+Selenium with Python Tutorial 9-Working with Radio buttons and Check boxes
+
+13:00
+Selenium with Python Tutorial 10-Working with Drop-down list
+
+Selenium with Python Tutorial 11-Working with Links | Operations on Web Links | Handling Links
+
+Selenium with Python Tutorial 12-How to handle Alerts/Popups || Switching to Alerts/Popups
+
+Selenium with Python Tutorial 13-How to handle Frames/iFrames | Switch between the frames
+
+Selenium with Python Tutorial 14-How to handle Browser Windows | Switch between the Windows
+
+Selenium with Python Tutorial 15- Working with HTML/Web Table
+
+Selenium with Python Tutorial 16- How to Scroll Web Pages in Selenium
+
+Selenium with Python Tutorial 17-Handle Mouse Actions | Mouse Hover Action
+
+Selenium with Python Tutorial 18-Handle Mouse Actions | Double click Action
+
+Selenium with Python Tutorial 19-Handle Mouse Actions | Right click Action
+
+Selenium with Python Tutorial 20-Handle Mouse Actions | Drag and Drop
+
+Selenium with Python Tutorial 21- How to upload Files
+
+Selenium with Python Tutorial 22- How to Download Files using Chrome Browser
+
+Selenium with Python Tutorial 23- How to Download Files using Firefox Browser
+
+Selenium with Python Tutorial 24-How to read data from MS-Excel using OpenPyXL | Data Driven Testing
+
+Selenium with Python Tutorial 25-How to write data into Excel using OpenPyXL | Data Driven Testing
+
+Selenium with Python Tutorial 26-Data Driven Testing using Microsoft Excel + OpenPyXL Module
+
+Selenium with Python Tutorial 27-Working with Cookies
+
+Selenium with Python Tutorial 28-Capture Screenshots
+
+Selenium with Python Tutorial 29-Logging | Generate log file
+
+Selenium with Python Tutorial 30-Python UnitTest Framework
+
+Selenium with Python Tutorial 31-Python UnitTest Framework Methods
+
+Selenium with Python Tutorial 32-Python UnitTest | Skipping Tests
+
+Selenium with Python Tutorial 33-Python UnitTest|Assertions|assertEqual & assertNotEqual
+
+Selenium with Python Tutorial 34-Python UnitTest|Assertions|assertTrue & assertFalse
+
+Selenium with Python Tutorial 35-Python UnitTest|Assertions|assertIsNone & assertIsNotNone
+
+Selenium with Python Tutorial 36-Python UnitTest|Assertions|assertIn & assertNotIn
+
+Selenium with Python Tutorial 37-Python UnitTest|Assertions|Relational comparison
+
+Selenium with Python Tutorial 38-Python UnitTest |Creating and Running Test Suites | Batch Testing
+
+Selenium with Python Tutorial 39-PyTest | Installation and Getting Started
+
+Selenium with Python Tutorial 40-PyTest | Working with PyTest Fixtures
+
+Selenium with Python Tutorial 41-PyTest | Run Multiple Tests in PyTest
+
+Selenium with Python | Unittest+ HTML Reports + Page Object Model
+
+Selenium with Python | Oracle Database Connectivity using cx_Oracle |Data Driven Testing
+
+Selenium with Python | PyTest HTML Report Generation | pytest-html module
+
+How To Generate Allure Reports in Selenium with Python & PyTest
+

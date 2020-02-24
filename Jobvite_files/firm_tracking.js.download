@@ -1,0 +1,148 @@
+(function(w){
+  var config = {"metricsLabels":{"contentBoards":"TR Content Board","personalizations":"TR Personalization","audiences":"TR Audience","campaigns":"TR Campaign"},"hitTypes":{"contentBoards":"event","audiences":"event","personalizations":"event","campaigns":"event"},"shouldTrackOrgAssets":true,"firmTrackProvider":"ga","triblioVisitorId":"zAqGNG06GoXBLSJogoL6nLtj","gaObjectAlias":"ga"};
+  var triblioVisitorId = config.triblioVisitorId;
+  var firmographicRecord =  {"name":"(Non-Company Visitor)","sicCode":"N/A","isIsp":true,"employees":"N/A","revenue":"N/A","city":"N/A","region":"N/A","country":"N/A","domain":"N/A","naicCode":"N/A","employeesCode":"N/A","revenueCode":"N/A","industry":"N/A","subIndustry":"N/A"};
+  var shouldTrackOrgAssets = config.shouldTrackOrgAssets;
+  var eIdsToNames = {"personalizations":{},"campaigns":{},"contentHubs":{},"audiences":{"zbL0":"Q22019 - Customer ABM Text Target Accounts","b3Mz":"Q22019 - Prof Services Target Accounts","qDP3":"@target accounts","WKWP":"Q22019 - iCIMS Customers","Ew6K":"Q22019 - Taleo Customers","5GnK":"Q32019 - Customer Accounts","WKm2":"General Audience - 4 Key Verticals","5Gp4":"@Everyone","jwGX":"@All SFDC Accounts","Oanw":"Q22019 - Manufacturing Target Accounts","60j9":"Q32019 - Key Accounts Leads + Contacts","lDoo":"Q419: Text Targets (14)","P3nw":"Donovan Accts – Triblio","Kg9z":"Rachel Test"}};
+  var gaObjectAlias = config.gaObjectAlias;
+  var thirdPartyLibraryLoaded = false;
+
+  if(!w.Triblio){ w.Triblio = {}; }
+  if(w.Triblio.onAccountIdentificationReady){ w.Triblio.onAccountIdentificationReady(firmographicRecord); }
+  w.Triblio.getAccountIdentification = function(){
+    return firmographicRecord;
+  };
+
+  if(!w.TriblioAssetNameTracking) w.TriblioAssetNameTracking = {queued:[]};
+
+  function GATracker(){
+    this.maxRetries = 1000;
+    this.retryCount = 0;
+  }
+
+  GATracker.prototype.run = function(){
+    var that = this;
+
+    this.waitForThirdParty(function(){
+      that.postFirmographicData();
+
+      that.checkAssetNamesQueue();
+    });
+  };
+
+  GATracker.prototype.waitForThirdParty = function(callback){
+    var that = this;
+
+    if(typeof w[gaObjectAlias] === "undefined" && this.retryCount <= this.maxRetries){
+      /*wait for ga to load*/
+      setTimeout(function(){
+        that.retryCount++;
+        that.waitForThirdParty(callback);
+      }, 5);
+    }
+    else if(this.retryCount > this.maxRetries){
+      console.log("cant find google analytics library on page!");
+    }
+    else{
+      thirdPartyLibraryLoaded = true;
+      callback();
+    }
+  };
+
+  GATracker.prototype.postFirmographicData = function(){
+    var data = {"name":"(Non-Company Visitor)","sicCode":"N/A","isIsp":true,"employees":"N/A","revenue":"N/A","city":"N/A","region":"N/A","country":"N/A","domain":"N/A","naicCode":"N/A","employeesCode":"N/A","revenueCode":"N/A","industry":"N/A","subIndustry":"N/A"};
+window[gaObjectAlias](function(tracker){
+if(!tracker || (tracker.get("trackingId") && tracker.get("trackingId") !== "UA-1198263-5")){
+window[gaObjectAlias]("create", "UA-1198263-5", "auto");
+}
+window[gaObjectAlias]("set", "dimension13", data.domain);
+window[gaObjectAlias]("set", "dimension14", data.industry);
+window[gaObjectAlias]("send", "event", {nonInteraction: true});
+});
+
+  };
+
+  GATracker.prototype.checkAssetNamesQueue = function(){
+    var that = this;
+
+    if(w.TriblioAssetNameTracking.queued){
+      w.TriblioAssetNameTracking.queued.forEach(function(ids){
+        that.postAssetNames(ids);
+      });
+    }
+  };
+
+  GATracker.prototype.postAssetNames = function(ids){
+    if(shouldTrackOrgAssets && thirdPartyLibraryLoaded){
+      var data = _getAssetNamesFromIds(ids);
+
+      data.forEach(function(d){
+      window[gaObjectAlias]("send",{
+        "hitType": d.hitType,
+        "eventCategory": d.metricsLabel,
+        "eventLabel": d.name,
+        "nonInteraction": true
+      });
+    });
+  
+    }
+  };
+
+  function _getAssetNamesFromIds(data){
+    /*currently there is no click tracking on assets for ga, so get out of here!*/
+    if(data.action === 'click') return [];
+
+    var lookup = eIdsToNames;
+    if(!lookup || !Object.keys(lookup).length){
+      lookup = {personalizations:{}, contentHubs: {}, audiences:{}, campaigns:{}};
+    }
+
+    var names = [];
+    var isTypeBoardAndHasData = data.hubId && lookup.contentHubs[data.hubId];
+
+    if(isTypeBoardAndHasData){
+      names.push({
+        metricsLabel:config.metricsLabels.contentBoards,
+        name: lookup.contentHubs[data.hubId],
+        hitType: config.hitTypes.contentBoards
+      });
+    }
+    else if(data.type !== "board" && data.personalizationId && data.audienceSegmentId && data.campaignId){
+      var personalizationIds = data.personalizationId.split(",");
+      var audienceSegmentIds = data.audienceSegmentId.split(",");
+      var campaignIds = data.campaignId.split(",");
+
+      personalizationIds.forEach(function(pId, index){
+        var hasPersonalization = (personalizationIds[index] && lookup.personalizations[personalizationIds[index]]) ? true : false;
+        var hasAudience = (audienceSegmentIds[index] && lookup.audiences[audienceSegmentIds[index]]) ? true : false;
+        var hasCampaign = (campaignIds[index] && lookup.campaigns[campaignIds[index]]) ? true : false;
+
+        if(hasPersonalization && hasAudience && hasCampaign){
+          names.push({
+            metricsLabel:config.metricsLabels.personalizations,
+            name: lookup.personalizations[personalizationIds[index]],
+            hitType: config.hitTypes.personalizations
+          });
+
+          names.push({
+            metricsLabel: config.metricsLabels.campaigns,
+            name: lookup.campaigns[campaignIds[index]],
+            hitType: config.hitTypes.campaigns
+          });
+
+          names.push({
+            metricsLabel: config.metricsLabels.audiences,
+            name: lookup.audiences[audienceSegmentIds[index]],
+            hitType: config.hitTypes.audiences
+          });
+        }
+      });
+    }
+    return names;
+  }
+
+  var tracker = new GATracker();
+  w.TriblioAssetNameTracking.postAssetNames = tracker.postAssetNames;
+
+  tracker.run();
+}(window));

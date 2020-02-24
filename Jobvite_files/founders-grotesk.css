@@ -1,0 +1,891 @@
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: normal;
+	font-weight: 300;
+	src: url('webfonts/FoundersGroteskWeb-Light.eot');
+	src: url('webfonts/FoundersGroteskWeb-Light.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-Light.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-Light.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: italic;
+	font-weight: 300;
+	src: url('webfonts/FoundersGroteskWeb-LightItalic.eot');
+	src: url('webfonts/FoundersGroteskWeb-LightItalic.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-LightItalic.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-LightItalic.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: normal;
+	font-weight: normal;
+	src: url('webfonts/FoundersGroteskWeb-Regular.eot');
+	src: url('webfonts/FoundersGroteskWeb-Regular.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-Regular.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-Regular.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: italic;
+	font-weight: normal;
+	src: url('webfonts/FoundersGroteskWeb-RegularItalic.eot');
+	src: url('webfonts/FoundersGroteskWeb-RegularItalic.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-RegularItalic.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-RegularItalic.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: normal;
+	font-weight: 500;
+	src: url('webfonts/FoundersGroteskWeb-Medium.eot');
+	src: url('webfonts/FoundersGroteskWeb-Medium.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-Medium.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-Medium.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: italic;
+	font-weight: 500;
+	src: url('webfonts/FoundersGroteskWeb-MediumItalic.eot');
+	src: url('webfonts/FoundersGroteskWeb-MediumItalic.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-MediumItalic.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-MediumItalic.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: normal;
+	font-weight: 600;
+	src: url('webfonts/FoundersGroteskWeb-Semibold.eot');
+	src: url('webfonts/FoundersGroteskWeb-Semibold.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-Semibold.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-Semibold.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: italic;
+	font-weight: 600;
+	src: url('webfonts/FoundersGroteskWeb-SemiboldItalic.eot');
+	src: url('webfonts/FoundersGroteskWeb-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-SemiboldItalic.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-SemiboldItalic.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: normal;
+	font-weight: bold;
+	src: url('webfonts/FoundersGroteskWeb-Bold.eot');
+	src: url('webfonts/FoundersGroteskWeb-Bold.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-Bold.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-Bold.woff') format('woff');
+}
+
+@font-face
+{
+	font-display: swap;
+	font-family: 'Founders Grotesk';
+	font-style: italic;
+	font-weight: bold;
+	src: url('webfonts/FoundersGroteskWeb-BoldItalic.eot');
+	src: url('webfonts/FoundersGroteskWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), url('webfonts/FoundersGroteskWeb-BoldItalic.woff2') format('woff2'), url('webfonts/FoundersGroteskWeb-BoldItalic.woff') format('woff');
+}
+
+a
+{
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+#site-wrapper h1,
+#site-wrapper h2,
+#site-wrapper h3,
+#site-wrapper h4,
+#site-wrapper h5,
+#site-wrapper h6,
+#site-wrapper .entry .title,
+#site-wrapper .featured-meta,
+#site-wrapper .news-item .meta,
+#site-wrapper .news-item a,
+#site-wrapper .customer-hero-quote-text strong
+{
+	font-family: 'Founders Grotesk' !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+#site-wrapper h1,
+#site-wrapper h2,
+#site-wrapper h3,
+#site-wrapper h4,
+#site-wrapper h5,
+#site-wrapper h6,
+#site-wrapper strong,
+#site-wrapper #hellobar
+{
+	font-weight: 600;
+}
+
+#site-wrapper h3 a,
+#site-wrapper h5,
+#site-wrapper .content-page h3,
+#site-wrapper .content-page p,
+#site-wrapper .content-page li,
+#site-wrapper .bottom-content h3,
+#site-wrapper .bottom-content h4,
+#site-wrapper .tab-content p,
+#site-wrapper .basic-element-formatting ol,
+#site-wrapper .basic-element-formatting p,
+#site-wrapper .basic-element-formatting ul,
+#site-wrapper .basic-formatting h3,
+#site-wrapper .basic-formatting li,
+#site-wrapper .basic-formatting ol,
+#site-wrapper .basic-formatting p,
+#site-wrapper .basic-formatting ul,
+.single #site-wrapper .basic-formatting h1
+{
+	color: #000;
+}
+
+#site-wrapper .content-page h3,
+#site-wrapper .content-page h3 strong,
+#site-wrapper .content-page p strong,
+#site-wrapper .bottom-content h3,
+#site-wrapper .bottom-content h3 strong,
+#site-wrapper .bottom-content h4,
+#site-wrapper .basic-element-formatting h3,
+#site-wrapper .basic-formatting h3
+{
+	color: #000;
+	font-weight: 500;
+}
+
+#site-wrapper .content-page p strong,
+#site-wrapper .basic-element-formatting p strong,
+#site-wrapper .basic-formatting p strong
+{
+	font-weight: bold;
+}
+
+#site-wrapper .jobvite-promo-banner .basic-formatting h3
+{
+	color: #fff;
+}
+
+#site-wrapper .basic-element-formatting p a,
+#site-wrapper .basic-formatting p a
+{
+	color: #31479e;
+}
+
+#site-wrapper .basic-element-formatting strong,
+#site-wrapper .basic-formatting strong
+{
+	color: inherit;
+}
+
+#site-wrapper .basic-element-formatting .jobvite-quote-text h3,
+#site-wrapper .basic-formatting .jobvite-quote-text h3,
+#site-wrapper .basic-element-formatting .jobvite-quote-text p,
+#site-wrapper .basic-formatting .jobvite-quote-text p
+{
+	color: #fff;
+}
+
+#site-wrapper #site-header #site-utility-bar
+{
+	background: #000;
+}
+
+#site-wrapper #site-header #site-logo > a
+{
+	background-image: url(images/jobvite-2019.png);
+}
+
+#site-wrapper #site-header #site-main-menu
+{
+	font-size: 1.7em;
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li > a > span
+{
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+@media (max-width: 1139px)
+{
+	#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > a > span
+	{
+		padding-left: 0.688em;
+		padding-right: 1.688em;
+	}
+	
+	#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > a > i
+	{
+		right: 0.5em;
+	}
+	
+	#site-wrapper #site-header #site-main-menu > ul > li.jobvite-button > a
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button):hover > a,
+#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > ul
+{
+	background: #e3f1fa;
+	color: #000;
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > a::before,
+#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > ul::before
+{
+	display: none;
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > a > i
+{
+	top: 1.05em;
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li:not(.jobvite-button) > ul > li > a::before
+{
+	background: rgba(0, 0, 0, 0.125);
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li.jobvite-button > a,
+#site-wrapper #site-header #site-mobile-menu > ul > li.jobvite-button > a,
+#site-wrapper .hero-section a.white-button,
+#site-wrapper .home-tab-top a.jv-button.white-button,
+#site-wrapper .bottom-widget a.jv-button.blue-button,
+#site-wrapper .bottom-widget a.jv-button.white-button,
+#site-wrapper .bottom-widget a.jv-button.gray-button,
+#site-wrapper .customer-hero a.jv-button.white-button,
+#site-wrapper .basic-element-formatting a.jv-button.blue-button,
+#site-wrapper .basic-formatting a.jv-button.blue-button,
+#site-wrapper .basic-formatting a.jv-button.small-button,
+#site-wrapper .event-filter .event-item .buttons a,
+#site-wrapper .jv-marketo-embed>.mktoForm>.mktoButtonRow>.mktoButtonWrap.mktoSimple>button.mktoButton,
+#site-wrapper .jv-marketo-embed>.mktoForm>.mktoButtonRow>.mktoButtonWrap>button.mktoButton,
+#site-wrapper .jv-hubspot-embed .hs-button,
+#site-wrapper .jobvite-promo-banner a.jv-button.white-button,
+#site-wrapper .jobvite-faqs .jobvite-faq-buttons a
+{
+	background: #31479e;
+	border: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 0 0 0 #000;
+	box-shadow: inset 0 0 0 0 #000;
+	color: #fff;
+	-moz-transition: ease-out 400ms;
+	-ms-transition: ease-out 400ms;
+	-o-transition: ease-out 400ms;
+	-webkit-transition: ease-out 400ms;
+	transition: ease-out 400ms;
+}
+#site-wrapper #site-header #site-main-menu > ul > li.jobvite-button > a:hover,
+#site-wrapper #site-header #site-mobile-menu > ul > li.jobvite-button > a:hover,
+#site-wrapper .hero-section a.white-button:hover,
+#site-wrapper .home-tab-top a.jv-button.white-button:hover,
+#site-wrapper .bottom-widget a.jv-button.blue-button:hover,
+#site-wrapper .bottom-widget a.jv-button.white-button:hover,
+#site-wrapper .bottom-widget a.jv-button.gray-button:hover,
+#site-wrapper .customer-hero a.jv-button.white-button:hover,
+#site-wrapper .basic-element-formatting a.jv-button.blue-button:hover,
+#site-wrapper .basic-formatting a.jv-button.blue-button:hover,
+#site-wrapper .basic-formatting a.jv-button.small-button:hover,
+#site-wrapper .event-filter .event-item .buttons a:hover,
+#site-wrapper .jv-marketo-embed>.mktoForm>.mktoButtonRow>.mktoButtonWrap.mktoSimple>button.mktoButton:hover,
+#site-wrapper .jv-marketo-embed>.mktoForm>.mktoButtonRow>.mktoButtonWrap>button.mktoButton:hover,
+#site-wrapper .jv-hubspot-embed .hs-button:hover,
+#site-wrapper .jobvite-promo-banner a.jv-button.white-button:hover,
+#site-wrapper .jobvite-faqs .jobvite-faq-buttons a:hover,
+#site-wrapper .jobvite-faqs .jobvite-faq-buttons a.jobvite-active
+{
+	background: #31479e;
+	-webkit-box-shadow: inset 400px 0 0 0 #000;
+	box-shadow: inset 400px 0 0 0 #000;
+	color: #fff;
+}
+
+#site-wrapper .bottom-widget.white:not(#jv-request-live-demo):not(#jv-partner-with-jobvite) a.jv-button.white-button,
+#site-wrapper .bottom-widget.white a.jv-button.gray-button,
+#site-wrapper .jobvite-promo-banner a.jv-button.white-button
+{
+	-webkit-box-shadow: inset 0 0 0 0 #fdb913;
+	box-shadow: inset 0 0 0 0 #fdb913;
+}
+#site-wrapper .bottom-widget.white:not(#jv-request-live-demo):not(#jv-partner-with-jobvite) a.jv-button.white-button:hover,
+#site-wrapper .bottom-widget.white a.jv-button.gray-button:hover,
+#site-wrapper .jobvite-promo-banner a.jv-button.white-button:hover
+{
+	-webkit-box-shadow: inset 400px 0 0 0 #fdb913;
+	box-shadow: inset 400px 0 0 0 #fdb913;
+	color: #000;
+}
+
+#site-wrapper #jv-system-status a.jv-button.white-button,
+#site-wrapper #jv-system-status a.jv-button.white-button:hover
+{
+	background: #000;
+}
+
+#site-wrapper .jobvite-faqs .jobvite-faq-buttons a
+{
+	background: #ededed;
+	-webkit-box-shadow: inset 0 0 0 0 #ed4a5a;
+	box-shadow: inset 0 0 0 0 #ed4a5a;
+	color: #000;
+}
+#site-wrapper .jobvite-faqs .jobvite-faq-buttons a:hover:not(.jobvite-active)
+{
+	background: #ededed;
+	-webkit-box-shadow: inset 400px 0 0 0 #ed4a5a;
+	box-shadow: inset 400px 0 0 0 #ed4a5a;
+	color: #fff;
+}
+
+#site-wrapper #site-header #site-main-menu > ul > li.jobvite-button > a::before,
+#site-wrapper #site-header #site-mobile-menu > ul > li.jobvite-button > a::before
+{
+	display: none;
+}
+
+#site-wrapper #site-header #site-mobile-menu
+{
+	background: #f5eee1;
+	/*background: #ededed;*/
+}
+
+#site-wrapper #site-header #site-mobile-menu > ul::before
+{
+	background: none;
+}
+
+#site-wrapper #site-header #site-mobile-menu > ul a
+{
+	color: #000;
+}
+
+#site-wrapper .hero-section
+{
+	background-color: #fdb913;
+	background-image: none;
+}
+
+#site-wrapper .hero-section h1,
+#site-wrapper .hero-section h1 a,
+#site-wrapper .hero-section h2,
+#site-wrapper .hero-section h3,
+#site-wrapper .customer-hero h1,
+#site-wrapper .customer-hero h2,
+#site-wrapper .customer-hero-quote-text,
+#site-wrapper .customer-hero-quote-name,
+#site-wrapper .filter-buttons h2
+{
+	color: #000;
+}
+
+#site-wrapper .customer-hero h1
+{
+	line-height: 1.125em;
+}
+
+@media (max-width: 991px)
+{
+	#site-wrapper .customer-hero h1,
+	#site-wrapper .customer-hero h2,
+	#site-wrapper .customer-hero-quote-text,
+	#site-wrapper .customer-hero-quote-name
+	{
+		color: #fff;
+	}
+	
+	#site-wrapper .customer-hero.version-3 .customer-hero-quote .customer-hero-quote-text
+	{
+		background-image: url(../dist/images/quote-open-white.png);
+	}
+	
+	#site-wrapper .customer-hero.version-3 .customer-hero-quote .customer-hero-quote-text .customer-hero-closing-quote
+	{
+		background-image: url(../dist/images/quote-close-white.png);
+	}
+}
+
+@media (min-width: 769px)
+{
+	#site-wrapper .customer-hero h1
+	{
+		font-size: 44px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px)
+{
+	#site-wrapper .customer-hero h1
+	{
+		font-size: 39px;
+	}
+}
+
+@media (max-width: 480px)
+{
+	#site-wrapper .customer-hero h1
+	{
+		font-size: 34px;
+	}
+}
+
+#site-wrapper .hero-section h1,
+#site-wrapper .hero-section h3,
+#site-wrapper .customer-hero h1,
+#site-wrapper .filter-buttons h2
+{
+	font-weight: 500;
+}
+
+#site-wrapper .hero-section h2,
+#site-wrapper .customer-hero h2
+{
+	font-weight: 300;
+}
+
+#site-wrapper h4
+{
+	color: #000;
+	font-size: 2.7em;
+}
+
+#site-wrapper .featured-section h4
+{
+	color: #fdb913;
+}
+
+#site-wrapper .tab-content .agenda-speaker-title
+{
+	color: #fdb913 !important;
+}
+
+#site-wrapper .tab-content .agenda-speaker a
+{
+	color: #31479e !important;
+}
+
+#site-wrapper h4 strong,
+#site-wrapper .featured-section h3,
+#site-wrapper .featured-section p,
+.blog #site-wrapper .col-sm-10 p,
+.blog #site-wrapper .col-sm-10 p a.fn,
+.blog #site-wrapper .col-sm-10 li,
+.single #site-wrapper .col-sm-10 p,
+.single #site-wrapper .col-sm-10 p a.fn,
+.single #site-wrapper .col-sm-10 li,
+.single #site-wrapper .col-sm-10 h1
+{
+	color: #000;
+}
+
+#site-wrapper .basic-element-formatting ol,
+#site-wrapper .basic-element-formatting p,
+#site-wrapper .basic-element-formatting ul,
+#site-wrapper .basic-formatting ol,
+#site-wrapper .basic-formatting p,
+#site-wrapper .basic-formatting ul,
+.home #site-wrapper .home-tab-top p
+{
+	font-size: 1.9rem;
+}
+
+#site-wrapper .basic-element-formatting ul > li,
+#site-wrapper .basic-formatting ul > li
+{
+	background: none;
+	position: relative;
+}
+
+#site-wrapper .basic-element-formatting ul > li::before,
+#site-wrapper .basic-formatting ul > li::before
+{
+	background: #fdb913;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	content: ' ';
+	display: block;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	top: 0.625em;
+	width: 5px;
+}
+
+
+#site-wrapper .basic-element-formatting .filter-buttons .select .slide-down a.active,
+#site-wrapper .basic-element-formatting .filter-buttons .select .slide-down a.active:link,
+#site-wrapper .basic-element-formatting .filter-buttons .select .slide-down a.active:visited,
+#site-wrapper .basic-element-formatting .filter-buttons .select .slide-down a:active,
+#site-wrapper .basic-element-formatting .filter-buttons .select .slide-down a:focus,
+#site-wrapper .basic-element-formatting .filter-buttons .select .slide-down a:hover,
+#site-wrapper .basic-formatting .filter-buttons .select .slide-down a.active,
+#site-wrapper .basic-formatting .filter-buttons .select .slide-down a.active:link,
+#site-wrapper .basic-formatting .filter-buttons .select .slide-down a.active:visited,
+#site-wrapper .basic-formatting .filter-buttons .select .slide-down a:active,
+#site-wrapper .basic-formatting .filter-buttons .select .slide-down a:focus,
+#site-wrapper .basic-formatting .filter-buttons .select .slide-down a:hover,
+#site-wrapper .basic-element-formatting .read-more,
+#site-wrapper .basic-element-formatting .read-more a,
+#site-wrapper .basic-formatting .read-more,
+#site-wrapper .basic-formatting .read-more a
+{
+	color: #31479e;
+}
+
+#site-wrapper .basic-element-formatting .read-more .link-arrow,
+#site-wrapper .basic-formatting .read-more .link-arrow,
+#site-wrapper .basic-element-formatting .link-arrow,
+#site-wrapper .basic-formatting .link-arrow
+{
+	border-color: #31479e;
+	color: #31479e;
+}
+#site-wrapper .basic-element-formatting .read-more:hover .link-arrow,
+#site-wrapper .basic-formatting .read-more:hover .link-arrow,
+#site-wrapper .basic-element-formatting .content:hover .read-more .link-arrow,
+#site-wrapper .basic-formatting .content:hover .read-more .link-arrow,
+#site-wrapper .jobvite-featured-resource:hover .read-more .link-arrow,
+#site-wrapper .basic-element-formatting a:hover .link-arrow,
+#site-wrapper .basic-formatting a:hover .link-arrow
+{
+	background: #31479e;
+	color: #fff;
+}
+
+#site-wrapper .tabs-list-container,
+.page-template-page-integrations #site-wrapper .top-content,
+.page-template-page-integrations #site-wrapper .bottom-content
+{
+	background: #f5eee1;
+	/*background: #ededed;*/
+}
+
+#site-wrapper .tabs-list > li > a
+{
+	color: #31479e;
+	font-size: 2.4em;
+}
+
+#site-wrapper .tabs-list > li:hover > a
+{
+	color: #31479e;
+}
+
+#site-wrapper .tabs-list > li.active > a
+{
+	color: #000;
+}
+
+#site-wrapper .stat-bubble a
+{
+	color: inherit !important;
+}
+
+#site-wrapper .stat-bubble-content,
+#site-wrapper .support-bubble-content
+{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #000;
+}
+
+#site-wrapper .stat-bubble-content > span
+{
+	line-height: 1em;
+}
+
+#site-wrapper .stat-bubble-content > span.stat
+{
+	color: #fdb913;
+}
+
+#site-wrapper .entry .content
+{
+	background: #f5eee1;
+	/*background: #ededed;*/
+}
+
+#site-wrapper .entry .title
+{
+	font-weight: 500;
+}
+
+#site-wrapper .tab-pane h3,
+#site-wrapper .tab-pane h3 strong,
+#site-wrapper .top-content h3,
+#site-wrapper .top-content h3 strong,
+#site-wrapper .tab-pane h4
+{
+	color: #000;
+	font-weight: 500;
+}
+
+#site-wrapper .bottom-widget h6
+{
+	font-weight: 500;
+}
+
+#site-wrapper .top-content p,
+#site-wrapper .bottom-widget.dark-gray h6,
+#site-wrapper .bottom-widget.dark-gray p
+{
+	color: #000;
+}
+
+#site-wrapper > footer
+{
+	background: #000;
+	font-size: 120%;
+}
+
+#site-wrapper footer.content-info .footer .footer-nav #menu-footer-menu-simple > li.social-networks .sub-menu > li.jv-button > a,
+#site-wrapper footer.content-info .footer .footer-nav #menu-footer > li.social-networks .sub-menu > li.jv-button > a
+{
+	display: block;
+	font-weight: 600;
+	padding-left: 0.75em !important;
+	padding-right: 0.75em !important;
+	text-align: center;
+}
+
+@media (max-width: 767px)
+{
+	#site-wrapper #jv-industry-recognition img
+	{
+		padding-bottom: 0;
+	}
+	
+	#site-wrapper #jv-industry-recognition br
+	{
+		display: inline;
+	}
+}
+
+/* Home Specific */
+@media (min-width: 480px)
+{
+	.home #site-wrapper .hero-wrapper .hero-section .product-features h1.large,
+	.home #site-wrapper .hero-wrapper .hero-section h1.title.large,
+	.home #site-wrapper .hero-wrapper .hero-section h2,
+	.home #site-wrapper .hero-wrapper .hero-section p
+	{
+		margin-left: 0;
+		max-width: 45%;
+		text-align: left;
+	}
+}
+
+@media (max-width: 479px)
+{
+	.home #site-wrapper .hero-wrapper .hero-section
+	{
+		background-color: #fdb913;
+		background-image: none !important;
+	}
+	
+	.home #site-wrapper .hero-wrapper .hero-section h1.title.large
+	{
+		font-size: 6em;
+		max-width: none;
+		text-align: center;
+	}
+	
+	.home #site-wrapper .hero-wrapper .hero-section h2
+	{
+		font-size: 3em;
+		max-width: none;
+		text-align: center;
+	}
+	
+	.home #site-wrapper .hero-wrapper .hero-section p
+	{
+		font-size: 2em;
+		max-width: none;
+		text-align: center;
+	}
+}
+
+.home #site-wrapper .hero-wrapper .hero-section p
+{
+	margin-left: -2.2em;
+}
+
+.home #site-wrapper .slide-home h4,
+.home #site-wrapper .slide-home p
+{
+	color: #000;
+}
+
+.home #site-wrapper .sizes .size > span.is_chosen > .button
+{
+	border-color: #31479e;
+}
+
+.home #site-wrapper .sizes .size > span.is_chosen > .button .fa
+{
+	color: #31479e;
+}
+
+.home #site-wrapper .tabs-list .tab-link:not(.active)
+{
+	color: #31479e;
+}
+
+.home #site-wrapper .home-tab-top .tab-headline
+{
+	color: #000;
+	font-weight: 500;
+}
+
+.home #site-wrapper .home-tab-top p
+{
+	color: #000;
+	font-weight: 500;
+}
+
+.home #site-wrapper .companies-recruiting h4,
+.home #site-wrapper .customers h3,
+.home #site-wrapper #jv-customer-stories h6,
+.home #site-wrapper #jv-industry-recognition h6
+{
+	color: #000;
+	font-size: 32px;
+}
+
+@media (min-width: 768px)
+{
+	.home #site-wrapper .home-section h3
+	{
+		font-size: 4.3rem;
+	}
+}
+
+#site-wrapper .jobvite-promo-banner
+{
+	background: #000;
+}
+
+@media (max-width: 767px)
+{
+	#site-wrapper .jobvite-promo-banner > div > .container > .row
+	{
+		padding-left: 0;
+	}
+	
+	#site-wrapper .jobvite-promo-banner .jobvite-promo-banner-image
+	{
+		display: none;
+	}
+}
+
+/* Product Specific */
+.page-template-page-product #site-wrapper .product-content
+{
+	background: #000;
+	color: #fdb913;
+}
+
+.page-template-page-product #site-wrapper .product-content *
+{
+	color: inherit;
+}
+
+#site-wrapper .related-items strong
+{
+	color: #000;
+}
+
+#site-wrapper .related-items a
+{
+	background: #fdb913;
+	color: #000;
+}
+
+#site-wrapper .related-items .related .link-arrow
+{
+	border-color: #000;
+	color: #000;
+}
+#site-wrapper .related-items .related:hover .link-arrow
+{
+	background: #000;
+	color: #fdb913;
+}
+
+#site-wrapper .bottom-widget .jv-button.white-button,
+#site-wrapper .middle-widget .jv-button.white-button,
+#site-wrapper footer.content-info .footer .footer-nav #menu-footer-menu-simple > li.social-networks .sub-menu > li.jv-button > a,
+#site-wrapper footer.content-info .footer .footer-nav #menu-footer > li.social-networks .sub-menu > li.jv-button > a
+{
+	background: rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow: inset 0 0 0 0 #fff;
+	box-shadow: inset 0 0 0 0 #fff;
+	color: #fff;
+	-moz-transition: ease-out 400ms;
+	-ms-transition: ease-out 400ms;
+	-o-transition: ease-out 400ms;
+	-webkit-transition: ease-out 400ms;
+	transition: ease-out 400ms;
+}
+
+#site-wrapper .bottom-widget .jv-button.white-button:hover,
+#site-wrapper .middle-widget .jv-button.white-button:hover,
+#site-wrapper footer.content-info .footer .footer-nav #menu-footer-menu-simple > li.social-networks .sub-menu > li.jv-button > a:hover,
+#site-wrapper footer.content-info .footer .footer-nav #menu-footer > li.social-networks .sub-menu > li.jv-button > a:hover
+{
+	background: rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow: inset 400px 0 0 0 #fff;
+	box-shadow: inset 400px 0 0 0 #fff;
+	color: #000;
+}
+
+#site-wrapper .bg-gradient
+{
+	background-image: url(https://www.jobvite.com/wp-content/uploads/2019/09/bg-pattern1.png);
+}
+
+#site-wrapper .bg-gradient a
+{
+	color: #31479e;
+}
+
+/* Events */
+#site-wrapper .featured-section
+{
+	background: #f5eee1;
+	/*background: #ededed;*/
+}
+
+.page-template-page-events #site-wrapper h2
+{
+	color: #000;
+}
+
+.page-template-page-events #site-wrapper .event-filter .event-item.term-event .date,
+.page-template-page-events #site-wrapper .event-filter .event-item.term-webinar .date,
+.page-template-page-events #site-wrapper .event-filter .event-item.term-customer-webinar .date
+{
+	background: #000;
+}
+
+.page-template-page-events #site-wrapper .event-filter .event-item h5 a
+{
+	color: #fdb913;
+}

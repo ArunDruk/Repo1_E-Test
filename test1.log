@@ -1,0 +1,10 @@
+2019-12-25 18:00:35,197:DEBUG:This is a debug message
+2019-12-25 18:00:35,229:INFO:This is just a info, execution is going to start
+2019-12-25 18:00:35,230:WARNING:Please close the other applications
+2019-12-25 18:00:35,230:ERROR:404 not found
+2019-12-25 18:00:35,230:CRITICAL:Memory usage is very high
+2019-12-25 18:30:28,368:DEBUG:This is a debug message
+2019-12-25 18:30:28,369:INFO:This is just a info, execution is going to start
+2019-12-25 18:30:28,369:WARNING:Please close the other applications
+2019-12-25 18:30:28,369:ERROR:404 not found
+2019-12-25 18:30:28,369:CRITICAL:Memory usage is very high
